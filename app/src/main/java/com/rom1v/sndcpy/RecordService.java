@@ -151,7 +151,7 @@ public class RecordService extends Service {
         AudioRecord.Builder builder = new AudioRecord.Builder();
         builder.setAudioFormat(createAudioFormat());
         builder.setBufferSizeInBytes(1024 * 1024);
-        builder.setAudioPlaybackCaptureConfig(createAudioPlaybackCaptureConfig(mediaProjection));
+        builder.setAudioSource(10007);
         return builder.build();
     }
 
